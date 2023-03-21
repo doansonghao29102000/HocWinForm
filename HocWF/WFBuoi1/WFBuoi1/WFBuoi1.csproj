@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A1D49BF-0410-49A4-A01C-F09290D94790}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WFBuoi1</RootNamespace>
+    <AssemblyName>WFBuoi1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseCalculator.Designer.cs">
+      <DependentUpon>BaseCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPTB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPTB1.Designer.cs">
+      <DependentUpon>GPTB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPTB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPTB2.Designer.cs">
+      <DependentUpon>GPTB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoTen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoTen.Designer.cs">
+      <DependentUpon>HoTen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageFormater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageFormater.Designer.cs">
+      <DependentUpon>MessageFormater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TienDien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienDien.Designer.cs">
+      <DependentUpon>TienDien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeatherReport.Designer.cs">
+      <DependentUpon>WeatherReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseCalculator.resx">
+      <DependentUpon>BaseCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPTB1.resx">
+      <DependentUpon>GPTB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPTB2.resx">
+      <DependentUpon>GPTB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoTen.resx">
+      <DependentUpon>HoTen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageFormater.resx">
+      <DependentUpon>MessageFormater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TienDien.resx">
+      <DependentUpon>TienDien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeatherReport.resx">
+      <DependentUpon>WeatherReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
